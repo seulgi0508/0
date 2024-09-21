@@ -4,36 +4,51 @@
         <title>html</title>
     </head>
     <body>
-        <a href="#alpha">Alpha 부분</a>
+      <audio src="풍경 - V.mp3"controls="controls"></audio>
+    <br>
+    겨울소리가 들어가 있는 노래야. 노래 제목은 풍경
+    <br>
+    <br>
+    <br>
+    <div id="a">
+    <p>안동대학교 LMS</p>
+        <a href="https://lms.andong.ac.kr/ilos/main/main_form.acl"><img src="안동.jpg" alt="" width="100"></a>
+    </div>
+    <br>
+    <hr>
+    <인스타그램><br>
+     <a href=" https://www.instagram.com/"><button><img src="ins.jpg" alt="" width="100"></button></a>
+      <hr>
+    <div id="aa">
+    <p>현재의 온도</p>
+    </div>
+    <button onclick="getWeather()">🍦</button> 
+    <p id="temperature"></p>
+    <script>
+        function getWeather() {
+            fetch('http://goweather.herokuapp.com/weather/Deagu')
+            .then((response)=>response.json())
+            .then((data)=>{
+                document.getElementById("temperature").innerHTML = data['temperature']
+                
+            });
+        }
+        </script>
+        *모바일에서만 실시간 대구 온도 확인 가능 
+      
+       <br>
+       <br>
+       <hr>
+       <div id="q">
+       <p>날씨를 클릭해보세요.</p></div>
+      <a href="https://search.naver.com/search.naver?where=nexearch&sm=top_sug.pre&fbm=0&acr=1&acq=%EB%8C%80%EA%B5%AC%EB%82%A0%EC%94%A8&qdt=0&ie=utf8&query=%EB%8C%80%EA%B5%AC%EB%82%A0%EC%94%A8"> <img src="5.PNG" alt=""></a>
         <br>
-        <a href="#beta">beta 부분</a>
-        <br>
-        <a href="#gamma">Gamma 부분</a>
-        <br>
-        <hr>
-        <h1 id="alpha">Alpha</h1>
-       <p>Lorem ipsum dolor sit amet, consecteturadipiscingelit. Morbi rutrumpretiumelit, at iaculis dui conguefacilisis. Lorem ipsum dolor sit amet, consecteturadipiscingelit. Sed auguelectus, 
-        sagittisquiscommodocommodo, congue a nibh. Donec ornareleo 
-        in ipsum consectetureuismod. Sed lorem urna, adipiscingeget pharetra
-        ullamcorper, facilisis id sapien. Phasellus ac pellentesqueodio.
-        Curabiturquistortor vel odiodignissimcongue ac sit ametnisl.
-        Nullaplaceratnibhquis mi tinciduntpretium.</p>
-        <h1 id="beta">Beta</h1>
-        <p>Donec at pharetra orci. Ut tincidunt porta aliquam.
-            Vivamuselementum dictum lobortis. Curabiturutnuncturpis.
-            Nam ultrices convallis orci, quis vestibulum nulla tempus at. 
-            Pellentesque habitant morbitristiquesenectus et netus et malesuada
-            fames ac turpisegestas. In nectortorlacus. Sed auguearcu, aliquetutsagittis
-            at, luctusegetorci. Proin tristique porta sagittis. Maecenas lorem dui, 
-            elementumutbibendum id, ullamcorper non magna. Aenean iaculisconguequam, 
-            sed faucibusurnatempor at. Nullafacilisi.</p>
-        <h1 id="gamma">Gamma</h1>
-        <p>Integer nibhtellus, tristiquequisblanditquis, consequat in nunc.
-             Duis accumsanporttitor auctor. Phasellus eros nunc, aliquamnecfaucibus vel, 
-             rutrumeuneque. Cras feugiatsagittis libero temporviverra. Nam molestieplacerat 
-             ligula, quisrutrumrisuspellentesque id. Aenean sollicitudinjusto non 
-             nibhullamcorperegetmalesuadasapienfacilisis. Mauris tempus rhoncuslectus non
-             aliquam.
-             In tinciduntvolutpateuismod.</p>
+          <hr>
+        <div id="b">
+        <p>유튜브</p>
+        <a href="https://www.youtube.com/"><img src="youtube.jpg" alt="" width="100"></a>
+    </div>
+     <p>이거 누르면 유튜브로 들어가져.</p>
+  <br>
     </body>
 </html>
